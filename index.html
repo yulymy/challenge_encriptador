@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="short cut icon" href="/imagenes/Vector.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img class="logo-img" src="/imagenes/Logo.png" alt="logo alura">
+
+        </div>
+
+        <div class="left">
+            <textarea class="left_text" type="text" id="texto" cols="30" rows="10"
+                placeholder="Ingrese el texto aquí"></textarea>
+
+        </div>
+
+        <div class="right-img">
+            <div id="muneco">
+                <h2 class="right_title">Ningún texto fue encontrado</h2>
+            </div>
+            <textarea class="copiarTexto" type="texto" id="resultado" cols="30" rows="10"
+                placeholder="Ingrese el texto que deseas encriptar o desencriptar"></textarea>
+
+            <div class="bcopiar">
+                <button type="button" id="bcopiar" onclick="copiar_res()">Copiar</button>
+            </div>
+
+
+
+        </div>
+
+        <div class="left_button">
+            <p><img alt="exclamacion" src="/imagenes/exclamacion.png"> solo letras minusculas y sin acentos </p><br>
+            <button type="button" id="btnEncriptar" onclick="encriptar()">Encriptar </button>
+            <button type="button" id="btnDesencriptar" onclick="desencriptar()">Desencriptar</button>
+
+        </div>
+
+
+    </div>
+
+    <script src="/script.js">
+    </script>
+
+</body>
+
+</html>
